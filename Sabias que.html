@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Noticias Hoy - Datos Curiosos</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f4f4;
+    }
+    header {
+      background: #1D396E;
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-weight: normal;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f0a500;
+    }
+    nav a.activo {
+      font-weight: bold;
+      color: #C7D5ED;
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    main h2 {
+      margin-top: 0;
+      font-size: 2rem;
+      color: #333;
+font-family: "Courier New", Courier, monospace;
+    }
+
+    /* Botones para alternar los Sabías que */
+    .sabias-links {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .sabias-links button {
+      flex: 1;
+      min-width: 180px;
+      padding: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      border: 2px solid #333;
+      background: white;
+      transition: background 0.3s, color 0.3s;
+      border-radius: 5px;
+    }
+    .sabias-links button.activo {
+      background: #1F2B52;
+      color: white;
+      border-color: #1F2B52;
+    }
+
+    /* Contenido Sabías que */
+    .sabias-content {
+      display: none;
+      line-height: 1.5;
+      color: #444;
+    }
+    .sabias-content.activo {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Noticias Hoy</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Política</a>
+      <a href="#">Deportes</a>
+      <a href="#" class="activo">Datos Curiosos</a>
+      <a href="#">Cultura</a>
+      <a href="#">Opinión</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Datos Curiosos</h2>
+
+    <div class="sabias-links">
+      <button id="btn1" class="activo">¿Sabías que existía una ley en Uruguay hasta 2017 que justificaba matar por infidelidad?</button>
+      <button id="btn2">¿Sabías que hubo una ley hasta 1995 que justificaba el infanticidio por vergüenza social?</button>
+    </div>
+
+    <div id="contenido1" class="sabias-content activo">
+      <p><strong>¿Sabías que existía una ley en Uruguay hasta 2017 que justificaba matar por infidelidad?</strong><br />
+      Durante décadas, el artículo 36 del Código Penal uruguayo permitió que un juez exonerara de pena a quien cometiera homicidio o lesiones si actuaba movido por la “pasión provocada por el adulterio”. Esta norma fue aprobada oficialmente el 26/10/1967, mediante el Decreto Nº 698/967.</p>
+      <div class="recuadro-articulo">
+      <p><em>Artículo 36 (La pasión provocada por el adulterio)</em><br />
+      La pasión provocada por el adulterio faculta al Juez para exonerar de pena por los delitos de homicidio y de lesiones, siempre que concurran los requisitos siguientes:</p>
+      <ol>
+        <li>Que el delito se cometa por el cónyuge que sorprendiera infraganti al otro cónyuge y que se efectúe contra éste o contra el amante.</li>
+        <li>Que el autor tuviera buenos antecedentes y que la oportunidad para cometer el delito no hubiera sido provocada o simplemente facilitada mediando conocimiento anterior de la infidelidad conyugal.</li>
+      </ol>
+       </div> 
+      <p>Este artículo estuvo vigente por 50 años, hasta su derogación en 2017, como parte de la Ley Nº 19.580 sobre violencia basada en género.
+La cual fue aprobada por la Cámara de Representantes por 63 votos afirmativos en un total de 84 diputados presentes, su discusión duró aproximadamente 14 horas durante dos días, se pudo rescatar algunas declaraciones en esa discusión:</p>
+      <br />
+      “Si una autocrítica tiene que plantearse este parlamento, es que esta ley haya demorado tanto”, dijo el diputado Luis Puig. <br />
+      “Este Parlamento está tomando como normal la muerte de mujeres. No nos conmovemos, semana a semana matan a una más”, dijo la diputada Cecilia Bottino.</p>
+
+      <hr />
+
+      <p><strong>Artículo 36 del Código Penal actualmente vigente (violencia intrafamiliar)</strong><br />
+      El antiguo artículo 36 del Código Penal fue sustituido por una versión que ya no justifica el homicidio por celos o infidelidad sino que permite exonerar la pena si la persona actuó bajo intensa emoción provocada por años de violencia doméstica. El texto actual es:</p>
+  <div class="recuadro-articulo">
+  <p><em>Artículo 36</em></p>
+  <p>El estado de intensa conmoción provocada por el sufrimiento crónico producto de violencia intrafamiliar, faculta al Juez para exonerar de pena por los delitos de homicidio y de lesiones, siempre que concurran los requisitos siguientes:</p>
+  <ol>
+    <li>Que el delito se cometa por el cónyuge, excónyuge, concubino, exconcubino, descendiente o ascendiente de éstos o de la víctima, o por persona con la que la víctima tenga o haya tenido una relación de noviazgo o convivencia.</li>
+    <li>Que el autor hubiera sido sometido a intensa y prolongada violencia por parte de la víctima o tuviera conocimiento de igual sometimiento de sus descendientes, ascendientes u otras personas bajo su guarda o cuidado con quienes mantuviera fuertes vínculos afectivos.</li>
+    <li>Que el autor u otras personas pudiendo solicitar protección, lo hubieran hecho sin que las respuestas hubieran resultado eficaces.</li>
+  </ol>
+</div>
+</div>
+
+    <div id="contenido2" class="sabias-content">
+      <p><strong>¿Sabías que hubo una ley hasta 1995 que justificaba el infanticidio por vergüenza social?</strong></p>
+    <div class="recuadro-articulo">  
+<p><em>Artículo 131 (Infanticidio honoris causa)</em><br />
+      Si el delito previsto en el artículo 310 se cometiera sobre la persona de un niño menor de tres días, para salvar el propio honor o el honor del cónyuge, o de un pariente próximo, será castigado con seis meses de prisión a cuatro años de penitenciaría.</p>
+      <p>Se entiende por parientes próximos los padres y los hijos legítimos o naturales, reconocidos o declarados tales, los adoptivos, los abuelos y nietos y también los hermanos legítimos.</p>
+      </div>
+<p>Hasta 1995 el artículo 131 del Código Penal uruguayo decía que si alguien mataba a un recién nacido, de menos de tres días de vida “para salvar el propio honor o el honor del cónyuge, o de un pariente próximo” se le imponía una pena menor, de seis meses a cuatro años, en lugar de tratarlo como un homicidio intencional que se pena con cuatro a dieciocho años.</p>
+      <p>Este artículo se basa en valores patriarcales y clasistas que durante años le daban más importancia al honor familiar que a la existencia real de una persona. Si su existencia manchaba a la familia, la justicia entendía como válido que quisieran matarlo.</p>
+      <p>Se asume que el honor (un concepto vago y socialmente construido, tradicionalmente ligado con la sexualidad femenina, el matrimonio y la moral tradicional) podía disminuir la gravedad de un crimen. Era un intento de comprender y hasta cierto modo justificar casos en los que la existencia del bebé suponía “vergüenza” y “deshonra” para la familia, por ejemplo hijos nacidos fuera del matrimonio, de relaciones interraciales, de violaciones o vínculos considerados inaceptables socialmente.</p>
+      <p>Esto nos obliga a pensar críticamente sobre cómo las nociones de moral y reputación fueron, y siguen siendo, utilizadas como mecanismos de control y opresión, en particular hacia las mujeres. La presión social y el miedo al rechazo familiar eran tan frecuentes y fuertes que podían llevar a actos desesperados, y la ley los consideraba atenuados.</p>
+      <p>Conocer sobre la historia nos permite entender el presente y cómo los estigmas de décadas anteriores tristemente se mantienen hasta la actualidad. Aunque ya no esté vigente, nos demuestra cómo la presión social y los estándares establecidos pueden llevar a que en los casos más extremos se entienda un homicidio como una forma de proteger el honor. La derogación de este artículo, ocurrida en 1995, muestra que estas ideas no pertenecen a un pasado remoto sino a una etapa muy próxima a la nuestra.</p>
+    </div>
+
+  </main>
+
+  
+
+  <script>
+    const btn1 = document.getElementById('btn1');
+    const btn2 = document.getElementById('btn2');
+    const contenido1 = document.getElementById('contenido1');
+    const contenido2 = document.getElementById('contenido2');
+
+    btn1.addEventListener('click', () => {
+      btn1.classList.add('activo');
+      btn2.classList.remove('activo');
+      contenido1.classList.add('activo');
+      contenido2.classList.remove('activo');
+    });
+
+    btn2.addEventListener('click', () => {
+      btn2.classList.add('activo');
+      btn1.classList.remove('activo');
+      contenido2.classList.add('activo');
+      contenido1.classList.remove('activo');
+    });
+  </script>
+</body>
+</html>
+
+
+
